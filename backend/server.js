@@ -24,11 +24,11 @@ mongoose.connect(MONGO_URI)
 app.use('/api/students', require('./routes/students'));
 
 // Fallback to index.html
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname, '../client/index.html'));
-// });
+app.get('/', (req, res) => {
+   res.send('Backend is running...'));
+ });
 
-const PORT = 3000;
+const PORT = process.env.PORT||3000;
 app.listen(PORT, () => {
-  console.log(`🚀 Server running at http://localhost:${PORT}`);
+  console.log(`🚀 Server running on port ${PORT}`);
 });
