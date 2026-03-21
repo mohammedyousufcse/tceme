@@ -25,7 +25,7 @@ app.use('/api/students', require('./routes/students'));
 
 // Fallback to index.html
 app.get('/', (req, res) => {
-   res.send('Backend is running...'));
+   res.send('Backend is running...');
  });
 
 const PORT = process.env.PORT||3000;
