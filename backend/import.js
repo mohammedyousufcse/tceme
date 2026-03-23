@@ -8,7 +8,7 @@ dns.setServers(['1.1.1.1', '8.8.8.8']);
 const MONGO_URI = 'mongodb+srv://mohammedyf786_db_user:qqbCtQVWgfJORXhz@tceme.zsjllke.mongodb.net/tceme?appName=tceme';
 
 // 🔧 Path to your Excel file
-const EXCEL_FILE = './data/All Student List ME Dept.xlsx';
+const EXCEL_FILE = './data/All Student List ME Dept New.xlsx';
 
 // 🔧 Sheet name - check tab name at bottom of Excel file
 const STUDENT_SHEET = 'All students';
